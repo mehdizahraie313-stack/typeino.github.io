@@ -665,6 +665,7 @@ form.onsubmit=async e=>{
   if(!sent){
     const link=(text,href,copyFirst)=>{ const a=el("a",{class:"btn ghost",href,target:"_blank",rel:"noopener",text}); if(copyFirst) a.onclick=()=>copy(msg,$("#resMsg")); acts.append(a); };
     if(C.whatsapp) link("ارسال در واتساپ",`https://wa.me/${C.whatsapp}?text=${encodeURIComponent(msg)}`);
+    <a href="tel:09123456789">09123456789</a>
     if(C.telegram) link("کپی و باز کردن تلگرام",`https://t.me/${C.telegram}`,true);
   }
   const r=$("#result"); r.hidden=false; r.focus({preventScroll:true}); r.scrollIntoView({block:"start"});
